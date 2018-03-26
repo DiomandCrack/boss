@@ -191,9 +191,9 @@ module.exports = {
           {
             test: /\.scss$/,
             use: [
-              {loader:require('style-loader')}, 
-              {loader:require('css-loader')}, 
-              {loader:require('sass-loader')}],
+              {loader:require.resolve('style-loader')}, 
+              {loader:require.resolve('css-loader')}, 
+              {loader:require.resolve('sass-loader')}],
           },
           // "file" loader makes sure those assets get served by WebpackDevServer.
           // When you `import` an asset, you get its (virtual) filename.
